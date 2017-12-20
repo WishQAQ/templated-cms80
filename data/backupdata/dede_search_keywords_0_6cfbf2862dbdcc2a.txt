@@ -1,0 +1,1 @@
+INSERT INTO `dede_search_keywords` VALUES('1','请输入...','请输入... 输入','3','0','1448514564','0','0');

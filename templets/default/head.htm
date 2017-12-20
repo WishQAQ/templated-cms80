@@ -1,0 +1,45 @@
+<header>
+  <div class="headlang">
+    <div class="inner ac">
+      <div class="l cc">
+        <p> <span style="color:#cccccc;"><span style="line-height: 2;">{dede:global.cfg_webname/}</span></span></p>
+      </div>
+      <div class="top-lang">
+        <ol>
+          <li>Tel ：{dede:global.cfg_dh/}</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <div class="inner">
+    <div class="top-logo" style="height:80px;"> <a href="/" title="{dede:global.cfg_webname/}" id="web_logo"> <img src="/style/images/logo.png" alt="{dede:global.cfg_webname/}" title="{dede:global.cfg_webname/}" style="margin:22px 0px 0px 0px;" /> </a>
+      <div class="top-nav" data-value=请输入...>
+        <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+          <input type="hidden" name="kwtype" value="0" />
+          <span class='navsearch_input'>
+          <input type="text" name="q" id="search-keyword" size='20'/>
+          </span> 
+          <input class='searchimage' type='image' src='/style/images/icon_ss.png' />
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="nav_index">
+  <nav>
+    <div class="inner nav">
+      <ul class="ac">
+        <li class="navdown"><a href="/" title="网站首页">网站首页</a></li>
+        {dede:channelartlist row=10 typeid='top'}
+        <li> <a href="{dede:field name='typeurl'/}"  title="{dede:field name='typename'/}">{dede:field name='typename'/}</a>
+          <dl>
+            {dede:channel type='son' noself='yes'}
+            <dd> <a href="[field:typelink/]"  title="[field:typename/]">[field:typename/]</a> </dd>
+            {/dede:channel}
+          </dl>
+        </li>
+        {/dede:channelartlist}
+      </ul>
+    </div>
+  </nav>
+</div>
